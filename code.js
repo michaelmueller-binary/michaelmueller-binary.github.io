@@ -12,7 +12,7 @@ function getBaseUrl(url) {
 }
 
 function getJsonPaths(method_name) {
-    url_path = getBaseUrl() + 'config/v3/' + method_name + '/';
+    url_path =   'https://michaelmueller-binary.github.io/config/v3/' + method_name + '/';
     return {
         send   : url_path + 'send.json',
         receive: url_path + 'receive.json',
