@@ -7,6 +7,7 @@ function isLocal(url) {
 }
 
 function getBaseUrl(url) {
+    return 'https://michaelmueller-binary.github.io'
     url = url || document.location.href;
     return (isProduction(url) || isLocal(url) ? '' : '/' + url.split('/')[3]) + '/';
 }
